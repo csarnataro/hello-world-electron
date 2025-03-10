@@ -1,4 +1,4 @@
-# Hello World Elecront
+# Hello World Electron
 
 A simple "Hello World" Electron app which show RAM and CPU usage.
 
