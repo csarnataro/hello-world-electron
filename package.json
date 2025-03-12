@@ -5,6 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build:macos-intel": "node_modules/.bin/electron-packager . hello_world --platform darwin --arch x64 --out dist/",
+    "build:linux-arm64": "node_modules/.bin/electron-packager . hello_world --platform linux --arch arm64 --out dist/",
     "lint": "eslint *.js"
   },
   "repository": "https://github.com/electron/electron-quick-start",
@@ -19,6 +21,8 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^2.0.0",
+    "@electron/packager": "^18.3.6",
+    "@electron/rebuild": "^3.7.1",
     "@stylistic/eslint-plugin": "^4.2.0",
     "electron": "^35.0.0",
     "eslint": "^9.22.0"
